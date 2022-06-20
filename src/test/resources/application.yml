@@ -1,4 +1,10 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://cloudstream.eu.auth0.com/.well-known/jwks.json
+          issuer-uri: https://cloudstream.eu.auth0.com/
   data:
     mongodb:
       uuid-representation: standard
